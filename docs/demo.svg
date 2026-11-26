@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="564" viewBox="0 0 640 564">
+<rect width="640" height="564" rx="10" fill="#0d1117"/>
+<rect width="640" height="30" rx="10" fill="#161b22"/><rect y="20" width="640" height="10" fill="#161b22"/>
+<circle cx="18" cy="15" r="6" fill="#ff5f57"/><circle cx="38" cy="15" r="6" fill="#febc2e"/><circle cx="58" cy="15" r="6" fill="#28c840"/>
+<text x="320.0" y="20" fill="#8b949e" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="12" text-anchor="middle">kaleido — LLVM JIT</text>
+<text x="20" y="58" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve"><tspan fill="#7ee787">$</tspan><tspan fill="#e6edf3"> ./build/kaleido examples/fib.ks</tspan></text>
+<text x="20" y="78" fill="#d2a8ff" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">=&gt; 55</text>
+<text x="20" y="98" fill="#d2a8ff" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">=&gt; 6765</text>
+<text x="20" y="118" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve"><tspan fill="#7ee787">$</tspan><tspan fill="#e6edf3"> ./build/kaleido examples/loops.ks</tspan></text>
+<text x="20" y="138" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">*****</text>
+<text x="20" y="158" fill="#d2a8ff" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">=&gt; 0</text>
+<text x="20" y="178" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">1</text>
+<text x="20" y="198" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">2</text>
+<text x="20" y="218" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">3</text>
+<text x="20" y="238" fill="#d2a8ff" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">=&gt; 0</text>
+<text x="20" y="258" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve"><tspan fill="#7ee787">$</tspan><tspan fill="#e6edf3"> ./build/kaleido --no-opt --emit-ir examples/optimize.ks | head -7</tspan></text>
+<text x="20" y="278" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">define double @test(double %x) {</text>
+<text x="20" y="298" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">entry:</text>
+<text x="20" y="318" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">  %addtmp = fadd double 3.000000e+00, %x</text>
+<text x="20" y="338" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">  %addtmp1 = fadd double %x, 3.000000e+00</text>
+<text x="20" y="358" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">  %multmp = fmul double %addtmp, %addtmp1</text>
+<text x="20" y="378" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">  ret double %multmp</text>
+<text x="20" y="398" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">}</text>
+<text x="20" y="418" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve"><tspan fill="#7ee787">$</tspan><tspan fill="#e6edf3"> ./build/kaleido --emit-ir examples/optimize.ks | head -6</tspan></text>
+<text x="20" y="438" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">define double @test(double %x) {</text>
+<text x="20" y="458" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">entry:</text>
+<text x="20" y="478" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">  %addtmp = fadd double %x, 3.000000e+00</text>
+<text x="20" y="498" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">  %multmp = fmul double %addtmp, %addtmp</text>
+<text x="20" y="518" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">  ret double %multmp</text>
+<text x="20" y="538" fill="#e6edf3" font-family="ui-monospace,SFMono-Regular,Menlo,Consolas,monospace" font-size="14" xml:space="preserve">}</text>
+</svg>
